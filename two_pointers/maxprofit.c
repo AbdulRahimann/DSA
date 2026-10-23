@@ -4,7 +4,7 @@ int maxProfit(int prices[5]){
     int l = 0;
     int r = 1;
     int maxP = 0;
-    while(l < sizeof(prices)/sizeof(int)){
+    while(r < sizeof(prices)/sizeof(int)){
         if (prices[l] < prices[r]){
             int profit = prices[r] - prices[l];
 
